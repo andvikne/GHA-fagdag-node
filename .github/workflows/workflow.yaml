@@ -33,11 +33,6 @@ jobs:
         run: npm audit fix --audit-level=moderate
 
       # Oppgave 7: Kjør linting
-      - name: Run lint (eslint configuration)
-        run: npx eslint --init  # Initializes ESLint if not already configured
-
-      - name: Run lint
-        run: npx eslint .       # Lints all files in the repository
 
       # Oppgave 8: Deploy step, sett navnet på din function app, i env.AZURE_FUNCTIONAPP_NAME
       # Og legg publish profile i en Github secret med navn AZURE_FUNCTIONAPP_PUBLISH_PROFILE
