@@ -29,10 +29,8 @@ jobs:
         run: npm test
 
       # Oppgave 6: List ut npm dependencies med sårbarheter.
-      - name: Upgrade azure tools
-        run: npm install azure-functions-core-tools@3.0.5682
       - name: Audit packages
-        run: npm audit fix
+        run: npm audit fix --audit-level=moderate
 
       # Oppgave 7: Kjør linting
       #- name: Run lint (eslint)
